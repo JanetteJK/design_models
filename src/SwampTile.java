@@ -1,13 +1,11 @@
-public class SwampTile {
+public class SwampTile implements Tile {
+    @Override
     public String getCharacter() {
         return "S";
     }
-
+    @Override
     public String getDescription() {
         return "swamp";
     }
 
-    public void action() {
-
-    }
 }

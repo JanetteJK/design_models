@@ -6,18 +6,16 @@ public class Game {
         System.out.println("Which kind of map do you want to play?\n1.) City\n2.)Wilderness");
         int choice = sc.nextInt();
         if (choice == 1) {
-            createMap(new CityMap());
-        }
-        else if (choice == 2) {
+            Map map =
+
+        } else if (choice == 2) {
             Map map = new WildernessMap();
-        }
-        else {
+            map.display();
+        } else {
             System.out.println("Error, no valid map chosen");
         }
-
     }
-    public static Map createMap(Map choice){
-        Map map = choice;
-        return map;
+    public Map createMap(){
+
     }
 }
