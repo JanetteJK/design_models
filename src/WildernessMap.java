@@ -1,21 +1,17 @@
 public class WildernessMap extends Map {
 
     @Override
-    void createTile(){
+    Tile createTile(){
         // 10 is the number of tiles I chose a map should have
-        for (int i = 0; i < 10; i++) {
             int r = random.nextInt(3);
             switch (r) {
                 case 0:
-                    tiles.add(new SwampTile());
-                    System.out.println("suo"); break;
+                    return new SwampTile();
                 case 1:
-                    tiles.add(new WaterTile());
-                    System.out.println("vesi"); break;
+                    return new WaterTile();
                 case 2:
-                    tiles.add(new ForestTile());
-                    System.out.println("mettä"); break;
+                    return new ForestTile();
+
             }
-        }
     }
 }

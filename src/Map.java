@@ -1,11 +1,14 @@
-import java.util.ArrayList;
 import java.util.Random;
 
 public abstract class Map {
-    public static ArrayList<Tile> tiles = new ArrayList<>();
+    protected Tile[][] tiles;
     public Random random = new Random();
 
-    abstract void createTile();
+    public Map(){
+
+    }
+
+    abstract Tile createTile();
 
     // shows the map on the screen
     public void display(){
