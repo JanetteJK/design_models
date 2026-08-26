@@ -1,8 +1,8 @@
 public class CityMap extends Map {
 
     @Override
-    void createTile(int size) {
-        for (int i = 0; i < size; i++) {
+    void createTile() {
+        for (int i = 0; i < 10; i++) {
             int r = random.nextInt(3);
             switch (r) {
                 case 0:

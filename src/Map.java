@@ -6,13 +6,15 @@ public abstract class Map {
     public Random random = new Random();
 
 
-    // creates a new tile in the chosen map type
-    abstract void createTile(int size);
+
+    abstract void createTile();
 
     // shows the map on the screen
-    public void display(int a){
-        for (int i = 0; i < a; i++) {
-            System.out.println(tiles.get(i).getCharacter() + " ");
+    public void display(){
+        System.out.println("pääsee tänne mutta lista on tyhjä");
+        for (Tile tile : tiles) {
+            System.out.println(tile.getCharacter() + " ");
+            System.out.println("kakka");
         }
     }
 
