@@ -10,6 +10,8 @@ public class CityMap extends Map {
                     return new ForestTile();
                 case 2:
                     return new BuildingTile();
+                default: return new RoadTile();
             }
+
     }
 }
