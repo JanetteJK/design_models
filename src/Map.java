@@ -2,10 +2,8 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public abstract class Map {
-    public ArrayList<Tile> tiles = new ArrayList<>();
+    public static ArrayList<Tile> tiles = new ArrayList<>();
     public Random random = new Random();
-
-
 
     abstract void createTile();
 

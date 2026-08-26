@@ -7,10 +7,13 @@ public class CityMap extends Map {
             switch (r) {
                 case 0:
                     tiles.add(new RoadTile());
+                    System.out.println("tie"); break;
                 case 1:
                     tiles.add(new ForestTile());
+                    System.out.println("mettä"); break;
                 case 2:
                     tiles.add(new BuildingTile());
+                    System.out.println("tönö"); break;
             }
         }
     }

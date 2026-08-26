@@ -6,7 +6,7 @@ public class Game {
         System.out.println("Which kind of map do you want to play?\n1.) City\n2.)Wilderness");
         int choice = sc.nextInt();
         if (choice == 1) {
-            Map map = new WildernessMap();
+            Map map = new CityMap();
             map.display();
         }
 
