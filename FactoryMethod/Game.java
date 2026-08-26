@@ -9,6 +9,10 @@ public class Game {
             Map map = new CityMap();
             map.display();
         }
+        else if (choice == 2) {
+            Map map = new WildernessMap();
+            map.display();
+        }
 
     }
 }
