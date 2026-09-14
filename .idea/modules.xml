@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/FactoryMethod_/FactoryMethod_4.iml" filepath="$PROJECT_DIR$/FactoryMethod_/FactoryMethod_4.iml" />
       <module fileurl="file://$PROJECT_DIR$/Observer/Observer.iml" filepath="$PROJECT_DIR$/Observer/Observer.iml" />
       <module fileurl="file://$PROJECT_DIR$/Singleton/Singleton.iml" filepath="$PROJECT_DIR$/Singleton/Singleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/State/State.iml" filepath="$PROJECT_DIR$/State/State.iml" />
       <module fileurl="file://$PROJECT_DIR$/design_models.iml" filepath="$PROJECT_DIR$/design_models.iml" />
     </modules>
   </component>
