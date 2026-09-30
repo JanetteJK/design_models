@@ -3,14 +3,14 @@ import java.util.Scanner;
 public class TicTacToe extends Game{
     char [][] board;
     int currentPlayer;
-    boolean gameOver;
+    boolean endOfGame;
     int winner;
 
     @Override
     public void initializeGame(int numberOfPlayers) {
         board = new char[3][3];
         currentPlayer = 0;
-        gameOver = false;
+        endOfGame = false;
         winner = -1;
     }
 
@@ -60,17 +60,17 @@ public class TicTacToe extends Game{
     }
 
     @Override
-    public boolean endOfGame() {
+    public boolean endofgame() {
         if (checkWinner('X')) {
             winner = 0;
-            gameOver = true;
+            endOfGame = true;
             return true;
         } else if (checkWinner('O')) {
             winner = 1;
-            gameOver = true;
+            endOfGame = true;
             return true;
         } else if (isBoardFull()) {
-            gameOver = true;
+            endOfGame = true;
             return true;
         }
         return false;

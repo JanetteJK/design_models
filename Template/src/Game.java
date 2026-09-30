@@ -4,7 +4,7 @@ public abstract class Game {
         // a template method specifying a generic game
         initializeGame(numberOfPlayers);
         int playerInTurn = 0;
-        while (!endOfGame()) {
+        while (!endofgame()) {
             playSingleTurn(playerInTurn);
             playerInTurn = ++playerInTurn % numberOfPlayers;
         }
@@ -12,7 +12,7 @@ public abstract class Game {
     }
 
     public abstract void initializeGame(int numberOfPlayers);
-    public abstract boolean endOfGame();
+    public abstract boolean endofgame();
     public abstract void playSingleTurn(int player);
     public abstract void displayWinner();
 }
