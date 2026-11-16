@@ -5,5 +5,6 @@ public interface ComputerBuilder {
     void buildHardDrive();
     void buildGraphicsCard();
     void buildOS();
+    Computer getComputer();
 
 }

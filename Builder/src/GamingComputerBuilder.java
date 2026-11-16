@@ -30,4 +30,9 @@ public class GamingComputerBuilder implements ComputerBuilder{
     public void buildHardDrive(){
         computer.addHardDrive("Tämä on pelikoneen kovalevy");
     }
+
+    @Override
+    public Computer getComputer(){
+        return computer;
+    }
 }

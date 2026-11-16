@@ -30,6 +30,11 @@ public class OfficeComputerBuilder implements ComputerBuilder{
     public void buildHardDrive(){
         computer.addHardDrive("tämä on toimistokoneen kovalevy");
     }
+
+    @Override
+    public Computer getComputer(){
+        return computer;
+    }
 }
 
 

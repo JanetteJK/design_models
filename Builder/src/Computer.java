@@ -1,35 +1,41 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Computer {
-    private String processor;
-    private String ramSize;
-    private String hardDrive;
-    private String graphicsCard;
-    private String os;
+    private List<String> parts;
+
 
     public Computer() {
-        this.processor = "";
-        this.ramSize = "";
-        this.hardDrive = "";
-        this.graphicsCard = "";
-        this.os = "";
+        this.parts =new ArrayList<>();
     }
 
     public void addProcessor(String processor) {
-        this.processor = processor;
+        this.parts.add(processor);
     }
 
     public void addRAM(String ramSize){
-        this.ramSize = ramSize + "GB";
+        this.parts.add(ramSize + " GB");
     }
 
     public void addHardDrive(String hardDrive){
-        this.hardDrive = hardDrive;
+        this.parts.add(hardDrive);
     }
 
     public void addGraphicsCard(String graphicsCard){
-        this.graphicsCard = graphicsCard;
+        this.parts.add(graphicsCard);
     }
 
     public void addOS(String os){
-        this.os = os;
+        this.parts.add(os);
     }
+
+
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        for (String part : parts) {
+            sb.append(part).append("\n");
+        }
+        return sb.toString();
+    }
+
 }
