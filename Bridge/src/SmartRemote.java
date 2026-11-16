@@ -9,5 +9,6 @@ public class SmartRemote extends BasicRemote{
     }
     public void voiceControl() {
         System.out.println("Remote: voice control on");
+        System.out.println("------------------------------------");
     }
 }
